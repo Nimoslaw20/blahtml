@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+</head>
+<body>
+
+    <h1>Food Order Form</h1>
+    <p>Please fill out the form below to place your order.</p>
+
+    <!-- Image -->
+    <img src="food-image.jpg" alt="Delicious Food" width="300"><br><br>
+
+    <form action="#" method="post">
+
+        <!-- Food Name -->
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" name="foodName" required><br><br>
+
+        <!-- Select Options -->
+        <label for="selectOptions">Select Options:</label>
+        <select id="selectOptions" name="selectOptions" required>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+        </select><br><br>
+
+        <!-- Extra -->
+        <label for="extra">Extra:</label>
+        <select id="extra" name="extra">
+            <option value="cheese">Extra Cheese</option>
+            <option value="spicy">Extra Spicy</option>
+            <option value="sauce">Extra Sauce</option>
+        </select><br><br>
+
+        <!-- Location -->
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <!-- Count -->
+        <label for="count">Count:</label>
+        <input type="number" id="count" name="count" min="1" required><br><br>
+
+        <!-- Additional Input Fields -->
+
+        <!-- Customer Name -->
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <!-- Delivery Date -->
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" required><br><br>
+
+        <!-- Special Instructions -->
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Order Button ok-->
+        <button type="submit">Order</button>
+
+    </form>
+
+</body>
+</html>
