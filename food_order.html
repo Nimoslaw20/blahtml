@@ -4,16 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Order Form</title>
-</head>
-<body>
 
-    <h1>Food Order Form</h1>
+
+
+
+   
+
+    <style>
+
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  /* height: 140px;
+  width: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center; */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+   .btn1 {
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border-radius: 8px;
+   }
+
+   .btn2 {
+      padding: 10px;
+      background-color: grey;
+      color: black;
+      border-radius: 8px;
+
+   }
+
+   .title {
+    font-size: 30px;
+    color: brown;
+   }
+
+   .body {
+    background-size: cover;
+   }
+
+   .innerbody {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+   }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body class="body">
+
+
+
+
+
+
+
+
+
+    <h1 class="title">Food Order Form</h1>
+
+    
     <p>Please fill out the form below to place your order.</p>
 
     <!-- Image -->
     <img src="https://pizarea.com/blog/wp-content/uploads/2021/09/6mG3xZOBUL.jpg" alt="Delicious Food" width="300"><br><br>
  <br> 
-    <form action="#" method="post">
+
+
+
+
+
+ <h1>Registration Form</h1>
+
+
+
+
+
+ <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://img.freepik.com/free-photo/view-delicious-burger-with-buns-cheese_23-2151281572.jpg?t=st=1730582538~exp=1730586138~hmac=924be41bf8b1d1a5db5fc97af0e3b8f743cf52d6ad5b1bcbdffca661f95279f6&w=1800" style="width:100%; height: 50%;">
+     
+     
+      <div class="text">Burgers</div>
+    
+    
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://img.freepik.com/free-photo/delicious-fries-studio_23-2151846524.jpg?t=st=1730582848~exp=1730586448~hmac=a3568bb277717a4b34fa7b92164a4cbaa16bc3014d3e14279b6c2bc79f24f6b7&w=2000" style="width:100%; height: 50%;">
+      <div class="text">Fries</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://img.freepik.com/free-photo/fried-chicken-french-fries-black-cement-floor_1150-28542.jpg?t=st=1730582934~exp=1730586534~hmac=0313ba7d616629edb6171af2bf9352790793fc232b5717319c5b6a20d379832a&w=1800" style="width:100%; height: 50%;">
+      <div class="text">Fried Chicken</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    
+    
+
+
+
+ <form action="#" method="post">
 
         <!-- Food Name -->
         <label for="foodName">Food Name:</label>
@@ -40,31 +252,116 @@
         <input type="text" id="location" name="location" required><br><br>
 
         <!-- Count -->
-        <label for="count">Count:</label>
+        <label for="count">Competition level :</label>
         <input type="number" id="count" name="count" min="1" required><br><br>
 
+
+        <label for="count">Parent name:</label>
+        <input type="number" id="count" name="count" min="1" required><br><br>
         <!-- Additional Input Fields -->
 
         <!-- Customer Name -->
-        <label for="customerName">Customer Name:</label>
-        <input type="text" id="customerName" name="customerName" required><br><br>
+       
 
-        <!-- Phone Number -->
-        <label for="phoneNumber">Phone Number:</label>
+
+
+     <div style="display: flex; justify-content:center;">
+
+
+       <div style="padding: 10px;">
+        <label for="customerName">Customer Name:</label><br>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+       </div>
+
+      
+       <div style="padding: 10px;">
+        <label for="phoneNumber">Phone Number:</label><br>
         <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+       </div>
+
+      
+
+     </div>
+
+
+
+
+
+
+
+
+
 
         <!-- Delivery Date -->
         <label for="deliveryDate">Delivery Date:</label>
-        <input type="date" id="deliveryDate" name="deliveryDate" required><br><br>
+        <input type="date" id="deliveryDate" name="deliveryDate" required><br><br><br>
+
+
+       <label>Choose your preferred package:</label><br>
+       <select name="package" id="package">
+
+        <option value="paperbag">Paper Bag</option>
+        <option value="rubberbag">Rubber bag</option>
+        <option value="plasticbowl">Plastic bowl</option>
+        <option value="paperbowl">Paper bowl</option>
+
+      </select><br><br>
+
+
+
+
+
+
+
 
         <!-- Special Instructions -->
-        <label for="instructions">Special Instructions:</label>
+        <label for="instructions">Special Instructions:</label><br>
         <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea><br><br>
 
         <!-- Order Button ok-->
-        <button type="submit">Order</button>
+        <button type="submit" class="btn1">Order</button>
+
+        <input type="reset" value="Reset"  class="btn2">
+
+
+
 
     </form>
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+   
+
+
 
 </body>
 </html>

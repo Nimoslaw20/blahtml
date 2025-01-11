@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Screen with Modal Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .split {
+      height: 50%;
+      width: 100%;
+      position: relative;
+    }
+
+    .top-section {
+      background-image: url('event.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .bottom-section {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Modal styling */
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      width: 600px;
+      height: 650px; 
+    }
+
+    /* Modal content (Form) */
+    .modal form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal label {
+      margin-top: 10px;
+    }
+
+    .modal input[type="text"],
+    .modal input[type="email"],
+    .modal input[type="password"] {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .modal input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Section with Background Image -->
+  <div class="split top-section">
+    <div style="display: flex; justify-content: center; padding-top: 20px;">
+      <h1>Bloom Leadership Academy</h1>
+    </div>
+  </div>
+
+  <!-- Bottom Section with White Background -->
+  <div class="split bottom-section">
+    
+      <h1>Registration Form</h1><br>
+      <p>Welcome to the registration form for "Who is Who Among African Descents in DFW"! This form is your gateway to becoming part of an empowering community initiative recognizing the outstanding contributions and achievements of individuals of African descent in the Dallas-Fort Worth (DFW) area. Thank you for your participation!</p>
+    
+  </div>
+
+  <div class="modal">
+    <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Submit">
+  </div>
+  
+
+  <!-- Modal with Form -->
+
+</body>
+</html>

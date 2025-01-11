@@ -1,0 +1,43 @@
+[
+    
+    {_id: 67366c7d251f23f898b9e4ad, simNumbers: [], shop: 6735fe3cef704e3771f27980, shopName: Test Shop,
+    
+     createdBy: 6735fe32ef704e3771f2797c, createdByName: My Attendant, dateAdded: 2024-11-14T13:47:40.758Z,
+     
+      status: active, startDayCashInHand: 5000, totalCashCapitalInjected: 0,
+      
+      
+       totalCashInHandAdded: 0, startDayEcashBalsTotal: 111.32,
+       
+       
+        totalEcashCapitalInjected: 0, totalEcashInHandAdded: 0,
+        
+        
+         closeDayEcashBals: [], 
+         
+         
+         startDayEcashBals: [
+            
+            
+            {_id: null, serviceProvider: 66d759a0d1fe737e3f22b6f7, 
+            
+            serviceProviderName: MTN, simNumber: 670fbdb36f912274b9d97251,
+            
+             simNumberPhone: 0598641861, amount: 111.32, dailyAccountId: null,
+             
+              shop: 6735fe3cef704e3771f27980, shopName: Test Shop,
+              
+              
+               addedBy: 6735fe32ef704e3771f2797c, addedByName:
+               
+       My Attendant, dateAdded: 2024-11-14T13:47:39.916446}],
+       
+       
+        expectedCashInHand: 0, actualCashInHand: 0,
+         actualCashInHandDiff: 0, expectedEcashBal: 0,
+         
+         actualEcashBal: 0, actualEcashBalDiff: 0,
+         
+          withdrawalsCount: 0, withdrawalsAmount: 0, depositsCount: 0, depositsAmount: 0, depositsReversedCount: 0, depositsReversedAmount: 0, airtimeTransfersCount: 0, airtimeTransfersAmount: 0, dataTransfersCount: 0, dataTransfersAmount: 0, dataTransfersReversedCount: 0, dataTransfersReversedAmount: 0, commissionBalance: 0, totalCommissionWithdrawn: 0, commissionWithdrawnCount: 0, totalCommissionAmount: 0, lsaCashCount: 0, totalLsaCashAmount: 0, lsaCashByProvider: [], lsaEcashCount: 0, totalLsaEcashAmount: 0, lsaEcashByProvider: [], closeDayEcashBalsTotal: 0, expensesCount: 0, totalExpensesAmount: 0, eCashExpensesCount: 0, eCashExpensesAmount: 0, cashExpensesCount: 0, cashExpensesAmount: 0, createdByAppUserDevice: 6735ea2d2e59e029ee0ed4eb, createdByDeviceId: QP1A.190711.020, createdByDeviceName: OPPO, teamId: 672f80a6b04995199d76ddfa, teamName: Gold Bars, totalShopsServed: 0, auditTrail: [], availableCash: [], txns: [], createdByRole: Attendant, totalCashFloat: 5000, totalEcashFloat: 111.32, totalFloat: 5111.32, totalCurrentBal: 0,
+
+ totalDepositsAmount: 0, totalDataTransfersAmount: 0, __v: 0}]

@@ -14,7 +14,8 @@
       
       /* Slideshow container */
       .slideshow-container {
-        max-width: 400px;
+        max-width: 800px;
+        max-height: 400px;
         position: relative;
         margin: auto;
       }
@@ -102,6 +103,7 @@
       @media only screen and (max-width: 300px) {
         .prev, .next,.text {font-size: 11px}
       }
+
       </style>
 
 
@@ -113,7 +115,7 @@
 
       <div style="background-color: lightblue; display: flex; justify-content: center;">
 
-        <h1 style="color: rgb(28, 22, 22);">Flight Ticket Booking</h1>
+        <h1 style="color: rgb(28, 22, 22);">Dream Movies</h1>
        
     
        </div>
@@ -121,17 +123,13 @@
 
   
 
-       <div style="display: flex; justify-content: center; border: 8px solid black; padding: 20px; ">
-
-       <div>
+  
 
 
 
       
 
-        <h1>User Information</h1>
-        
-        <p>Fill in your details for this trip.</p>
+       
 
 
 
@@ -172,116 +170,32 @@
     <span class="dot" onclick="currentSlide(3)"></span> 
   </div>
   
+  <br><br>
+
+
+  <div  style="display: flex; justify-content: space-around;">
+
+
+    <div class="container">
+      <!-- Image section -->
+      <div class="image-section">
+        <img src="your-image.jpg" alt="Description of image"> <!-- Replace with your image path -->
+      </div>
+     
+      <!-- Text section -->
+      <div class="text-section">
+        <p class="title">Title Text</p>
+        <p class="description">This is the description text that goes under the title.</p>
+      </div>
+    </div>
+
+
+
+  </div>
   
   
     
-        <form action="https://formspree.io/f/xblrwvvq"
-        method="POST"   >
-
-           
-        
-        <label>Select title: </label><br>
-
-        <select name="title" style="padding: 5px 10px">
-
-            <option value="Mr.">Mr.</option>
-            <option value="Mrs.">Mrs.</option>
-            <option value="Miss">Miss.</option>
-            <option value="Dr">Dr.</option>
-            <option value="Prof.">Prof.</option>
-            <option value ="Ing">Ing.</option>
-            <option value="Nr.">Nr.</option>
-
-        </select><br><br>
-
-
-
-        <label>Select status: </label><br>
-
-        <select name="status" style="padding: 5px 10px">
-
-            <option value="todo">To do</option>
-            <option value="progress">In-progress</option>
-            <option value="review">In review</option>
-            <option value="done">Done</option>
-          
-
-        </select><br><br>
-
-        
-        
-        
-        <label>First name: </label><br>
-           <input style="padding: 4px;" type="text" name="fullname"> <br>
-
-            <br>
-
-            <label>Last name: </label><br>
-            <input  type="text" name="fullname"> <br>
- 
-             <br>
-
-           <label>Email: </label><br>
-           <input  type="email" name="email"> <br>
-
-           <br>
-
-           <label>Country: </label><br>
-           <input  type="text" name="country"> <br><br>
-
-
-           <label>Tel: </label><br>
-           <input  type="number" name="telephone"> <br><br>
-
-
-           <label>Street: </label><br>
-           <input  type="text" name="street"> <br><br>
-
-
-           <label>Date: </label><br>
-           <input  type="date" name="id"> <br><br>
-
-
-
-           <label>State </label><br>
-           <input  type="text" name="state"> <br><br>
-
-
-           <label>Nationality </label><br>
-           <input  type="text" name="nationality"> <br><br>
-
-          
-
-           <label>Destination </label><br>
-           <input  type="text" name="destination"> <br><br>
-
-
-
-           <label>Amount </label><br>
-           <input  type="number" name="amount"> <br><br>
-
-
-
-           <input type="checkbox" name="checkbox">
-           
-           <label>Do you want to receive new stories from us?</label>
-          
-           <br>
-
-
-           
-
-         <button type="submit"   style="background-color:green; color: white; padding: 10px;">
-
-
-          Request Payment
-         </button>
-
-
-
-
-
-        </form>
+      
 
        
        </div>

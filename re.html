@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function confirmSubmit(event) {
+            event.preventDefault();
+
+            if (confirm("Are you sure you want to submit this order?")) {
+                document.getElementById("registration").submit();
+            }
+        }
+    </script>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: rgb(231, 197, 83);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .header h1 {
+            color: rgb(50, 15, 3);
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Container for form */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Form Styling */
+        form {
+            max-width: 600px;
+            width: 100%;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: rgb(129, 129, 129);
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        /* Image */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 10px;
+            }
+
+            form {
+                padding: 10px;
+            }
+
+            input, select, textarea {
+                padding: 10px;
+            }
+
+            button {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Bloom Leadership Academy</h1>
+    </div>
+
+    <!-- Form Container -->
+    <div class="form-container">
+        <div>
+            <h2 style="text-align: center; font-style: oblique;">Registration Form</h2>
+            <p>Welcome to the registration form for "Who is Who Among African Descents in DFW"!</p>
+            <img src="event.jpg" alt="Event Image">
+            <p>This form is your gateway to becoming part of an empowering community initiative recognizing the outstanding contributions and achievements of individuals of African descent in the Dallas-Fort Worth (DFW) area.</p>
+            <p>Thank you for your participation!</p>
+
+            <h2 style="font-style: oblique;">Student Info</h2>
+            <p>Please provide the following details to help us better understand and assist you. Your information will be kept confidential and used solely for academic purposes. Your cooperation is appreciated.</p>
+
+            <!-- Form -->
+            <form action="https://formspree.io/f/mbljllyb" method="post" id="registration" onsubmit="confirmSubmit(event)">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" required>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" required>
+
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="Phone" id="phone" required>
+
+                <label for="competitionlevel">Competition Level (Choose ONE):</label>
+                <select name="competitionlevel" id="competitionlevel" required>
+                    <option value="6th Grade Math">6th Grade Math</option>
+                    <option value="Prealgebra 6th-8th Grades">Prealgebra 6th-8th Grades</option>
+                    <option value="Algebra 1/ SAT Level 1">Algebra 1/ SAT Level 1</option>
+                    <option value="Algebra 2/ SAT Level 2">Algebra 2/ SAT Level 2</option>
+                </select>
+
+                <label for="parentname">Parent/Guardian Name:</label>
+                <input type="text" name="parentname" id="parentname" required>
+
+                <label for="parentphone">Parent/Guardian Phone Number:</label>
+                <input type="tel" name="parentphone" id="parentphone" required>
+
+                <label for="parentemail">Parent/Guardian E-mail:</label>
+                <input type="email" name="E-mail" id="parentemail" required>
+
+                <label for="comment">Comment:</label>
+                <textarea name="Comment" id="comment" rows="4"></textarea>
+
+                <input type="checkbox" name="checkbox" id="notify">
+                <label for="notify">Would you like to be notified about the program?</label>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+                <p>Thank you for taking the time to fill out our registration form! Kindly note that payment method for this program is Zelle via +1 (214) 469 6551.</p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

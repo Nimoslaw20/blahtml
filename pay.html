@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <script>
+
+      function confirmSubmit(event){
+        event.preventDefault();
+
+    if (
+
+confirm("Do you want to proceed?")
+
+    )
+
+    {
+
+        document.getElementById("orderForm").submit();
+
+    }
+
+
+
+
+      }
+
+
+    </script>
+   
+    
+  
+
+
+</head>
+
+<body>
+    <div style="background-color: lightblue; display: flex; justify-content: center;">
+        <h1 style="color: rgb(28, 22, 22);">Food Order Form</h1>
+    </div>
+
+    <div style="display: flex; justify-content: center; border: 8px solid black; padding: 20px; ">
+        <div>
+            <h1>User Information</h1>
+            <p>Fill in your details for this trip.</p>
+
+            <form 
+            
+           id="orderForm"
+
+           onsubmit="confirmSubmit(event)"
+            
+            
+            action="https://formspree.io/f/xblrwvvq" method="POST" >
+                <!-- ... (rest of the form fields remain unchanged) ... -->
+
+                <button type="submit" style="background-color:green; color: white; padding: 10px;">
+                    Request Payment
+                </button>
+
+                
+
+                <input type="reset" value="Reset" style="padding: 10px;">
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+</footer>
+</html>
