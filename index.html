@@ -3,122 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Template with CSS</title>
+    <title>HTML Page with Div Boxes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
+            padding: 10px 20px;
             text-align: center;
-            padding: 1em;
         }
-        main {
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        div {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
             padding: 20px;
             text-align: center;
         }
-        div {
-            background-color: burlywood;
-            padding: 15px;
-            margin-top: 20px;
+        div strong {
+            color: #333;
+            font-weight: bold;
         }
         footer {
-            background-color: #4CAF50;
-            color: orange;
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 1em;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            padding: 10px 0;
+            margin-top: 20px;
         }
-        ul {
-            text-align: left;
-            margin: 20px;
-            color: blue;
-        }
-        h1 {
-            color: red
+        h1, h2{
+            margin: 0;
+            padding-bottom: 10px;
         }
 
-        h2 {
-            color:violet
-            
-        }
+        h3, h4 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 30px;
 
-
-        h3 {
-
-            color:yellow;
-            font-size: 18px;
-        }
-
-        h4 {
-            color: blue;
-            font-size: 23;
-        }
-
-        h5 {
-            color:brown;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <h1>Welcome to the Page</h1>
     </header>
 
-    <main>
-        <h2>About This Template</h2>
-        <p>This is a simple webpage with an inline CSS style.</p>
-
-        <div >
-            <h3>Content Section</h3>
-            <p>This section contains some extra information in a <code>&lt;div&gt;</code> element.</p>
-
-            <h4>Subheading 1</h4>
-            <p>Details under subheading 1.</p>
-
-            <ul>
-                <li>List item 1 under Subheading 1</li>
-                <li>List item 2 under Subheading 1</li>
-                <li>List item 3 under Subheading 1</li>
-            </ul>
-
-            <h4>Subheading 2</h4>
-            <p>Details under subheading 2.</p>
-
-            <ul>
-                <li>List item 1 under Subheading 2</li>
-                <li>List item 2 under Subheading 2</li>
-                <li>List item 3 under Subheading 2</li>
-            </ul>
-
-            <h4>Subheading 3</h4>
-            <p>Details under subheading 3.</p>
-
-            <ul>
-                <li>List item 1 under Subheading 3</li>
-                <li>List item 2 under Subheading 3</li>
-                <li>List item 3 under Subheading 3</li>
-            </ul>
-
-            <h5>Detail 1</h5>
-            <p>Information for detail 1.</p>
-
-            <h5>Detail 2</h5>
-            <p>Information for detail 2.</p>
-
-            <h5>Detail 3</h5>
-            <p>Information for detail 3.</p>
+    <section>
+        <div>
+            <h2>Box 1</h2>
+            <p><strong>This is the content of the first box.</strong></p>
         </div>
-    </main>
+        <div>
+            <h2>Box 2</h2>
+            <p><strong>This is the content of the second box.</strong></p>
+        </div>
+        <div>
+            <h3>Box 3</h3>
+            <p><strong>This is the content of the third box.</strong></p>
+        </div>
+        <div>
+            <h3>Box 4</h3>
+            <p><strong>This is the content of the fourth box.</strong></p>
+        </div>
+        <div>
+            <h4>Box 5</h4>
+            <p><strong>This is the content of the fifth box.</strong></p>
+        </div>
+        <div>
+            <h4>Box 6</h4>
+            <p><strong>This is the content of the sixth box.</strong></p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 My Simple Website</p>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
