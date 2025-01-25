@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: red;
+}
+h3 {
+    color: blue;
+}
+h4 {
+    color: brown;
+}
+h5 {
+    color: #FFBF00; /* Deep yellow in hex */
+}
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+}
+main {
+    padding: 20px;
+}
+.content {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin-top: 20px;
+}
+.image-container {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+aside {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-top: 20px;
+}
