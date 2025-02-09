@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    letter-spacing: 1px;
+    text-align: center;
+    word-spacing: normal;
+    text-shadow: 2px 2px 2px orange;
+  }
+
+  div {
+    border: solid 2px;
+    overflow-wrap: normal;
+  }
+
+  h1 {
+    margin: 10px 0;
+    padding: 10px;
+    text-shadow: 2px 2px 2px orange;
+  }
+  

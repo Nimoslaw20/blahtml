@@ -1,0 +1,21 @@
+.primaryRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .box {
+    height: 200px;
+    width: 250px;
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 8px 8px 5px #444;
+    background-image: url("https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-117808.jpg?t=st=1738535309~exp=1738538909~hmac=1a4c255e0d62ebc6d6b49f45bcb8912964b32c4418fe763cfb2612bf5bed788f&w=1800");
+    text-align: center;
+  }
+
+  h1 {
+    color: white;
+    padding: 20px;
+    font-size: 60px;
+  }
